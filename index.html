@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff0f6">
+  <title>Happy Birthday, Joanna! ♡</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="sparkle-field" aria-hidden="true"></div>
+  <audio id="birthdayMusic" src="birthday-song.mp3" loop preload="auto"></audio>
+  <button class="music-button" id="musicToggle" aria-pressed="false" aria-label="Play or pause birthday music">♫ <span>Play music</span></button>
+
+  <main class="book">
+    <section class="page active" id="home" aria-labelledby="homeTitle">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">A tiny corner of the internet, made just for you</p>
+          <h1 id="homeTitle">Happy Birthday,<br><span class="script-name">Joanna Sanjay!</span></h1>
+          <p class="hero-text">Today is all about celebrating the wonderful person you are, alle. I hope your day is soft, full of little sparkly things, lots of laughter, and all the small small things that make you happy. You deserve all of it, Jo. ♡</p>
+          
+          <div class="tiny-note">made with love & a little bit of magic</div>
+        </div>
+        <div class="hero-art" aria-label="Birthday cake and balloons">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <span class="floaty balloon b1">🎈</span><span class="floaty balloon b2">🎈</span>
+          <div class="sun-disc">✦</div>
+          <div class="cake-card"><div class="cake-candles">🕯️ 🕯️ 🕯️</div><div class="cake">🎂</div><div class="cake-caption">Make a wish, birthday girl!</div></div>
+          <span class="floaty heart h1">♡</span><span class="floaty heart h2">♥</span><span class="floaty star s1">✧</span><span class="floaty star s2">✦</span>
+        </div>
+      </div>
+      <div class="page-footer"><span>01 / 06</span><button class="button primary next-button" data-next="messages">Let's begin →</button></div>
+    </section>
+
+    <section class="page" id="messages" aria-labelledby="messagesTitle" hidden>
+      <div class="page-title"><p class="eyebrow">Open one whenever you need a smile</p><h1 id="messagesTitle">Little notes <em>for you</em></h1><p>Pick an envelope. It has something nice to say. 💌</p></div>
+      <div class="notes-grid">
+        
+<button class="note-card" data-message="You deserve the kind of happiness that stays even after the candles are blown out, alle. Never forget how much you are loved and appreciated, okay? ♡"><span>💌</span><strong>Open when you need a smile</strong><small>tap to open</small></button>
+
+<button class="note-card" data-message="Oru small reminder from your bestie: you're doing better than you think, Jo. You don't have to figure out everything today itself. Slowly slowly, one step at a time, okay? 🌷"><span>🌸</span><strong>Open when life feels a lot</strong><small>tap to open</small></button>
+
+<button class="note-card" data-message="Birthday rule aanallo! Today you can have extra cake, extra compliments, extra rest, everything! No guilt, nothing. Just enjoy your day properly, manasilayo? 🎂"><span>🎀</span><strong>Open on your birthday</strong><small>tap to open</small></button>
+
+<button class="note-card" data-message="Life busy aayalum, I hope you never forget that there's always someone cheering for you, okay? Njan ivide und, rooting for you always, Joanna! 💗"><span>🫶</span><strong>Open when you need a cheerleader</strong><small>tap to open</small></button>
+
+      </div>
+      <div class="message-panel" id="messagePanel" hidden aria-live="polite"><p class="eyebrow">A little note for you</p><button class="panel-close" id="closeMessage" aria-label="Close message">×</button><p id="messageText"></p></div>
+      <div class="page-footer"><button class="button soft prev-button" data-prev="home">← Back</button><span>02 / 06</span><button class="button primary next-button" data-next="reasons">Next: little reminders →</button></div>
+    </section>
+
+    <section class="page" id="reasons" aria-labelledby="reasonsTitle" hidden>
+      <div class="page-title"><p class="eyebrow">A little list that could go on forever</p><h1 id="reasonsTitle">Why you're <em>so special</em></h1><p>Some reminders for the days you forget just how lovely you are.</p></div>
+      <div class="reasons-grid">
+        
+<article class="reason-card"><span>🌼</span><div><small>01 · YOUR HEART</small><h2>Your kindness</h2><p>You have this way of making people feel special, alle. Not everyone can do that, you know. It's a really lovely thing about you.</p></div></article>
+
+<article class="reason-card"><span>☀️</span><div><small>02 · YOUR ENERGY</small><h2>Your laughter</h2><p>Your happiness is contagious, Jo. Even a normal day feels a little better when you're happy and laughing like that.</p></div></article>
+
+<article class="reason-card"><span>🦋</span><div><small>03 · JUST YOU</small><h2>Your uniqueness</h2><p>There's nobody like you, sherikkum. The way you talk, laugh, and do your own little things... athokke makes you special.</p></div></article>
+
+<article class="reason-card"><span>🫶</span><div><small>04 · OUR FRIENDSHIP</small><h2>The friend you are</h2><p>I'm really happy we became friends, alle. We've got so many memories already, and iniyum kure memories undakkanam. ♡</p></div></article>
+
+<article class="reason-card"><span>🌈</span><div><small>05 · YOUR FUTURE</small><h2>Your potential</h2><p>You've got so many beautiful things waiting for you, mole. Even when things get difficult, don't stop believing in yourself, okay? Slowly slowly, you'll get there.</p></div></article>
+
+<article class="reason-card"><span>💗</span><div><small>06 · ALWAYS REMEMBER</small><h2>You matter</h2><p>You don't have to do anything special or make everyone happy to be important. You matter just as you are, manasilayo? Never forget that. ♡</p></div></article>
+
+      </div>
+      <div class="page-footer"><button class="button soft prev-button" data-prev="messages">← Back</button><span>03 / 06</span><button class="button primary next-button" data-next="gifts">Next: open your gifts →</button></div>
+    </section>
+
+    <section class="page" id="gifts" aria-labelledby="giftsTitle" hidden>
+      <div class="page-title"><p class="eyebrow">Three little gifts, no wrapping paper required</p><h1 id="giftsTitle">Pick a <em>surprise</em></h1><p>Tap each gift to unwrap the message inside. 🎁</p></div>
+      <div class="gift-grid">
+        
+<button class="gift-box gift-pink" data-gift="A pocketful of sunshine ☀️|I hope this year brings you lots of little happy moments, unexpected surprises, peaceful mornings, and people who make you feel loved. Life won't always be perfect, alle, but I hope it gives you plenty of reasons to smile. ♡"><span class="gift-emoji">🎁</span><strong>Gift 01</strong><small>Something bright</small></button>
+
+<button class="gift-box gift-blue" data-gift="A little wish for your dreams 🌙|Whatever dreams you've got in that little head of yours, I hope you get to make them real, okay? Even if things get difficult sometimes, don't give up on yourself. Take your time, grow at your own pace, and remember that you deserve good things too, manasilayo? ♡"><span class="gift-emoji">🎀</span><strong>Gift 02</strong><small>Something hopeful</small></button>
+
+<button class="gift-box gift-yellow" data-gift="A forever friendship token 💗|For now, this is just a small virtual gift, alle. But when we finally meet, I'm going to give you something real too! So consider this a little promise from me, hehe. I can't wait to see your reaction. Until then, here's to more silly conversations, more memories, more laughs, and many more birthdays together. ♡"><span class="gift-emoji">🧸</span><strong>Gift 03</strong><small>Something from me</small></button>
+
+      </div>
+      <div class="gift-result" id="giftResult" hidden aria-live="polite"><span class="result-icon">✨</span><p class="eyebrow">YOU UNWRAPPED A SURPRISE</p><h2 id="giftTitle"></h2><p id="giftMessage"></p><button class="button soft" id="closeGift">Close surprise</button></div>
+      <div class="page-footer"><button class="button soft prev-button" data-prev="reasons">← Back</button><span>04 / 06</span><button class="button primary next-button" data-next="memories">
+  Our future memories → 
+</button></div>
+    </section>
+
+
+    <section class="page" id="memories" aria-labelledby="memoriesTitle" hidden>
+      <div class="page-title"><p class="eyebrow">Little plans for the day we finally meet</p><h1 id="memoriesTitle">Memories we <em>haven't made yet</em></h1><p>We haven't met in person yet, but that just means there are so many firsts waiting for us. Let's save these little plans for our future memories. ♡</p></div>
+      <div class="memories-grid">
+
+<article class="memory-card memory-hangout">
+  <div class="memory-art">🫶🏻</div>
+  <div class="memory-copy">
+    <small>THE DAY WE FINALLY MEET</small>
+    <h2>Our first proper hangout</h2>
+    <p>Imagine, after all these talks and silly conversations, we'll finally meet for real, alle! No more texting from far away. We'll laugh at the most random things, take a hundred pictures, and probably act like we've known each other forever. Sherikkum, I think it'll be one of those days I'll keep remembering with a smile. ♡</p>
+    <span class="memory-tag">Status: waiting for our day ✨</span>
+  </div>
+</article>
+
+<article class="memory-card memory-shawarma">
+  <div class="memory-art">🌯</div>
+  <div class="memory-copy">
+    <small>FIRST FOOD MISSION</small>
+    <h2>Our shawarma date</h2>
+    <p>One thing we're definitely doing is eating shawarma together! At last, no more just talking about it. We'll find a nice place, order our shawarma, and enjoy our little food date. And don't you dare cancel this plan, ketto? 😂</p>
+    <span class="memory-tag">Status: pending, but confirmed in my mind ♡</span>
+  </div>
+</article>
+
+<article class="memory-card memory-scooter">
+  <div class="memory-art">🛵</div>
+  <div class="memory-copy">
+    <small>THE BIG DREAM</small>
+    <h2>Your Ola scooter</h2>
+    <p>I really hope you get that Ola scooter you've been wanting, Jo! Imagine how happy you'll be when it finally happens. I hope I get to see that smile of yours when your dream comes true. One more reason for us to celebrate, alle? ♡</p>
+    <span class="memory-tag">Status: waiting for your dream to come true ✨</span>
+  </div>
+</article>
+
+<article class="memory-card memory-photobooth">
+  <div class="memory-art">📸</div>
+  <div class="memory-copy">
+    <small>PICTURE-PERFECT CHAOS</small>
+    <h2>Our photo booth memories</h2>
+    <p>We HAVE to find a photo booth when we meet! We'll make the weirdest faces, laugh at each other's poses, and take so many pictures that choosing the best one becomes impossible. And that little photo strip? Athu nammade precious memory aayirikkum. ♡</p>
+    <span class="memory-tag">Status: practising our poses 😂</span>
+  </div>
+</article>
+
+<article class="memory-card memory-playlist">
+  <div class="memory-art">🎧</div>
+  <div class="memory-copy">
+    <small>OUR LITTLE SOUNDTRACK</small>
+    <h2>Our shared playlist</h2>
+    <p>One day, we'll listen to our favourite songs together instead of just sending them to each other. We'll sing along, make fun of each other's music taste, and probably repeat the same song ten times. Just imagine how different those songs will feel after that day, alle? ♡</p>
+    <span class="memory-tag">Status: playlist ready, bestie pending 🎶</span>
+  </div>
+</article>
+
+<article class="memory-card memory-dubai">
+  <div class="memory-art">🌆</div>
+  <div class="memory-copy">
+    <small>A PLACE FROM YOUR CHILDHOOD</small>
+    <h2>Dubai & the real shawarma</h2>
+    <p>I hope you get to visit Dubai again someday and see all those places that were part of your childhood. Must be a special feeling, alle, going back to a place that holds so many memories. And if we ever go together, finding that proper Dubai shawarma is compulsory! No excuses, okay? 🤭♡</p>
+    <span class="memory-tag">Status: one day, hopefully ✨</span>
+  </div>
+</article>
+
+      </div>
+      <div class="future-note"><span>♡</span><p>We may not have these memories yet, but we have the plans, the conversations, and the hope of making them real someday.</p></div>
+      <div class="page-footer"><button class="button soft prev-button" data-prev="gifts">← Back to gifts</button><span>05 / 06</span><button class="button primary next-button" data-next="letter">One last surprise →</button></div>
+    </section>
+
+    <section class="page letter-page" id="letter" aria-labelledby="letterTitle" hidden>
+      <div class="page-title"><p class="eyebrow">Psst… this last one is just for you</p><h1 id="letterTitle">A little letter <em>from me</em></h1><p>Take a breath, open your heart, and tap the envelope. 💌</p></div>
+      <div class="envelope-wrap"><button class="big-envelope" id="openLetter" aria-expanded="false" aria-controls="letterContent"><span class="envelope-heart">♡</span><span class="envelope-label">For Joanna, with love</span><small>tap to open</small></button></div>
+      <article class="letter-paper" id="letterContent" hidden>
+        <p class="letter-date">A little birthday letter</p><h2>Dear Joanna, ♡</h2>
+        
+
+<h5>Happy 18th birthday, my Twinnnn! 🧸💗</h5>
+
+<p>Sherikkum, it's still a little crazy to think that we met on Instagram on February 13, 2026. Just two people who happened to meet online, sharing common things and slowly getting to know each other. I don't think I knew back then how much that one little connection would come to mean to me. It's funny how someone who was once just a stranger on Instagram can become such an important part of your life, alle?</p>
+
+<p>But one thing I'm especially grateful for is that you came into my life during some of my toughest days. You were there when things weren't easy for me, and you genuinely helped me get through them. Maybe you don't even realise how much that meant to me, but I'll always be thankful for it. You made some difficult days feel a little less difficult, and that is something I won't forget. Thank you for being there for me, Joanna. Sherikkum, thank you. ♡</p>
+
+<p>And now look at you, turning 18! Officially an adult, wow. 😂 But please, don't get too excited, mole. In my eyes, you're still that little baby dancing to why this kolaveri, and I don't think that is going to change anytime soon. You can turn 18, 20, or even 30, but for me, you'll still be a baby. Athu angane thanne irikkum. 🤏🏻💗</p>
+
+<p>There's still so much we have to do together, alle? Our first hangout, our shawarma date, silly photo booth pictures, and listening to our playlist together. I hope we make all these memories someday, and yes, you'll get a real gift from me when we finally meet! Hehe. 🎁 I hope you get your dream Ola scooter and visit Dubai again someday, too. And who knows, maybe we'll explore it together and find that proper Dubai shawarma! So many plans, mole. Ini ellam nadakkanam, ketto? ♡</p>
+
+<p>But jokes aside, as you step into this new chapter of your life, I genuinely wish you the happiest things. I hope you find people who appreciate you, opportunities that excite you, and little moments that make you stop and think, "Life is actually beautiful." I hope you achieve the things you've been dreaming about, and even the things you haven't dared to dream about yet.</p>
+
+<p>And on the days when things don't go your way, I hope you remember that you don't have to figure everything out at once. Take your time, make mistakes, learn, grow, and be kind to yourself. You deserve the same kindness you give to others, manasilayo? And never feel like you have to be okay all the time.</p>
+
+<p>I'm really glad that our paths crossed that February. Out of all the people we could have met, somehow we met each other, and I'm grateful that we did. I don't know what every coming year will look like, but I hope they bring us more conversations, more random nonsense, more laughs, and more birthdays to celebrate.</p>
+
+<p>So here's to Joanna at 18 — even though, according to me, you're still a baby. 😂 Here's to your dreams, your happiness, your little victories, and all the lovely things waiting for you ahead.</p>
+
+<p>Keep being yourself, Jo. Keep smiling, keep dreaming, and please never forget how much you matter. I'm rooting for you, always.</p>
+
+<p>Happy birthday once again, my twin. I hope this little website makes you smile, because you deserve something made just for you. ♡</p>
+
+        <p class="letter-signoff">Happy birthday, twinnn. ♡<br><strong>With lots of love,</strong><br><span class="your-name">Boo ♡</span></p>
+        <button class="button primary" id="finalConfetti">One last sprinkle of magic ✨</button>
+        <div id="magicSurprise" hidden>
+  <div class="magic-banner">
+
+    <h2>A song for you, Joanna ♡</h2>
+
+    <div class="magic-player">
+
+      <div class="magic-track">
+       
+
+        <audio id="magicSong" controls preload="metadata">
+          <source src="magic-song.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+    </div>
+
+    <div class="magic-lyrics">
+      <p>
+        No matter how far apart we are,<br>
+        you still have a special place in my heart.<br>
+        Here's a little song to make you smile,<br>
+        and remind you that you're worth every mile. 💗
+      </p>
+    </div>
+  </div>
+</div>
+      </article>
+      <div class="page-footer"><button class="button soft prev-button" data-prev="memories">← Back to memories</button><span>06 / 06</span><button class="button primary" id="finishButton">Celebrate Joanna! ♡</button></div>
+      <p class="end-note" id="endNote" hidden>Happy birthday, Joanna. I hope this made you smile. ♡</p>
+    </section>
+  </main>
+  <footer class="footer"><p>Made especially for Joanna Sanjay <span>♡</span></p><p class="footer-small">A little website, a lot of love.</p></footer>
+</body></html>
